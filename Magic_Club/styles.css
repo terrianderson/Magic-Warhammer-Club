@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: BrazierFlame;
+    src: url(./resources/fonts/BrazierFlame.ttf);
+}
+
+@font-face {
+    font-family: MortifiedDrip;
+    src: url(./resources/fonts/MortifiedDrip.ttf);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-image: url("./resources/images/michael-dziedzic-zqbTr1jwSxc-unsplash.jpg");
+    background-size: cover;
+    height: 5rem;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-flex;
+    padding: .8rem 3rem;
+}
+.navbar li a {
+    display: inline-flex;
+    color: aliceblue;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    /*height: 55rem;*/
+    height: auto;
+    width: 100%;
+    color: rgb(232, 50, 5);
+}
+
+.banner h2 {
+    text-align: center;
+    color: rgb(253, 57, 7);
+    /*background: -webkit-linear-gradient(rgb(229, 64, 10), rgb(106, 8, 8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    font-size: 8rem;
+    font-weight: 900;
+    font-family: BrazierFlame;
+    padding: 5rem 0;
+    margin: 0;
+    background-image: url("./resources/images/marco-de-luca-FUJFQhHkztQ-unsplash.jpg");
+}
+
+.banner h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.banner .bancontainer {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    /*height: 100rem;*/
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(rgb(169, 169, 169),rgb(57, 33, 33));
+}
+
+.banner .bancontainer .imagecontainer {
+    height: 25rem;
+    width: 12.5rem;
+    margin: auto;
+}
+
+#magic {
+    /*display: flex;*/
+    height: 100%;
+    width: 100%;
+    transform: rotate(270deg);
+    object-fit: contain;
+    padding-bottom: 0;
+}
+
+#war {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: rgb(184, 180, 180);
+}
+
+.activities {
+   padding-top: 4rem; 
+   margin-right: 5rem;
+}
+
+.break {
+    background-image: url("./resources/images/michael-dziedzic-zqbTr1jwSxc-unsplash.jpg");
+    background-size: cover;
+    height: 5rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.pictures {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgb(57, 33, 33),rgb(169, 169, 169),rgb(57, 33, 33));
+}
+
+.pictures .imagecontainer {
+    height: 40rem;
+    width: 35rem;
+    margin: 3rem;
+}
+
+#tavern {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+#tables {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+#cave {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+#grassdoor {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.quotes {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgb(57, 33, 33),rgb(169, 169, 169));
+    color: aliceblue;
+    padding: 3rem;
+}
+
+.quotes h3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    justify-content: left;
+    background-image: url("./resources/images/michael-dziedzic-zqbTr1jwSxc-unsplash.jpg");
+    background-size: cover;
+    height: 5rem;
+    width: 100%;
+}
+
+.footer li {
+    display: inline-flex;
+    padding: .8rem 3rem;
+    color: aliceblue;
+}
+
+#phone {
+    padding-left: 75rem;   
+}
+
+@media only screen and (max-width: 1280px) {
+    * {
+        font-size: 12px;
+    }
+
+    .navbar {
+        justify-content: left;
+        height: 4rem;
+        
+    }
+
+    .navbar li {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar li a {
+        justify-content: left;
+    }
+
+    .banner h2 {
+        font-size: 6rem;
+    }
+
+    .break {
+        height: 4rem;
+    }
+
+    .quotes {
+        display: block;
+    }
+
+    .quotes h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        justify-content: center;
+        height: 4rem;
+    }
+
+    #phone {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    * {
+        font-size: 10px;
+    }
+
+    #mg {
+        display: none;
+    }
+
+    #wh {
+        display: none;
+    }
+
+    .banner .bancontainer {
+        display: block;
+    }
+
+    .banner h3 {
+        padding-left: 5rem;
+    }
+}
